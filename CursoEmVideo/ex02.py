@@ -1,7 +1,5 @@
 preco = float(input('Digite o preço do produto: '))
-formaPag = str(input('Digite a forma de pagamento.\n'
-                     '[ Dinheiro / Cheque / Cartão / 2x no cartão /'
-                     ' 3x ou mais no cartão]: ')).strip().lower()
+formaPag = str(input('Digite a forma de pagamento.\n[ Dinheiro / Cheque / Cartão / 2x no cartão / 3x ou mais no cartão]: ')).strip().lower()
 if formaPag in 'dinheiro cheque':
     desc = preco * 0.1
     novoPreco = preco - desc
