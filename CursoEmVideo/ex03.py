@@ -19,8 +19,11 @@ else:
         novoPreco = preco - desc
         print(f'Com o desconto de 5%, o novo preço do produto sai a R${novoPreco :.2f} reais.')
     elif escolha == 3:
-        print(f'Dividido 2 vezes no cartão, o produto sai no valor de R${preco :.2f} reais.')
+        prestacao = preco / 2
+        print(f'Dividido 2 vezes no cartão, a prestação do produto sai a R${prestacao :.2f} reais.')
     else:
         aum = preco * 0.2
         novoPreco = preco + aum
-        print(f'Com 20% de aumento, o preço do produto sai a R${novoPreco :.2f} reais.')
+        div = int(input('Quantas vezes você quer dividir ? '))
+        prestacao = novoPreco / div
+        print(f'Com 20% de aumento, o novo preço produto vai ser R${novoPreco :.2f} reais, com prestações a R${prestacao :.2f} reais.')
