@@ -36,9 +36,15 @@ for c in range(1, (q + 1)):
         MulherMenor += 1
     else:
         MulherMaior += 1
+    if sexo == 'M' and idade < 18:
+        HomemMenor += 1
+    else:
+        HomemMaior += 1
 print(f'A pessoa mais velho é {maisVelho} com {maiorIdade} anos.')
 print(f'A pessoa mais jovem do grupo é {maisJovem} com {menorIdade} anos.')
 print(f'Nesse grupo a um total de {totHomem} homem(s) e {totMulher} mulher(es).')
 print(f'A média de idade foi {(mediaIdade)/q :.0f} anos.')
 print(f'Mulheres menores de idade: {MulherMenor}')
+print(f'Mulheres maiores de idade: {MulherMaior}')
 print(f'Homens menores de idade: {HomemMenor}')
+print(f'Homens maiores de idade: {HomemMaior}')
