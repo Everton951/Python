@@ -48,6 +48,7 @@ for c in range(1, (q + 1)):
         HomemMenor += 1
     else:
         HomemMaior += 1
+print('-' * 30)
 print(f'A pessoa mais velho é {maisVelho} com {maiorIdade} anos.')
 print(f'A pessoa mais jovem do grupo é {maisJovem} com {menorIdade} anos.')
 print(f'Nesse grupo a um total de {totHomem} homem(s) e {totMulher} mulher(es).')
