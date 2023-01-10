@@ -1,8 +1,8 @@
-# Pegar o nome - Idade - se é masculino ou feminino - maior e menor idade - média de idade - mulheres abaixo de 20 anos - nome do homem mais velho - nome da mulher mais nova
+# Pegar o nome - Idade - se é masculino ou feminino - maior e menor idade - média de idade - mulheres abaixo de 18 anos - nome do homem mais velho e ,mais jovem- nome da mulher mais nova e mais velha
 from datetime import date
 maiorIdade = menorIdade = 0
-maisVelho = ''
-maisJovem = ''
+maisVelho = maisJovem = ''
+mulherVelha = mulherNova = ''
 totMulher = totHomem = MulherMenor = MulherMaior = HomemMaior = HomemMenor = 0
 mediaIdade = 0
 q = int(input('Quantas vezes você quer verificar ? '))
@@ -29,9 +29,17 @@ for c in range(1, (q + 1)):
         if idade > maiorIdade:
             maiorIdade = idade
             maisVelho = nome
+            if sexo == 'M':
+                maisVelho = nome
+            else:
+                mulherVelha = nome
         if idade < menorIdade:
             menorIdade = idade
             maisJovem = nome
+            if sexo == 'M':
+                maisJovem = nome
+            else:
+                mulherNova = nome
     if sexo == 'F' and idade < 18:
         MulherMenor += 1
     else:
@@ -48,3 +56,7 @@ print(f'Mulheres menores de idade: {MulherMenor}')
 print(f'Mulheres maiores de idade: {MulherMaior}')
 print(f'Homens menores de idade: {HomemMenor}')
 print(f'Homens maiores de idade: {HomemMaior}')
+print(f'A mulher mais velha é {mulherVelha}')
+print(f'A mulher mais nova é {mulherNova}')
+print(f'O homem mais velho é {maisVelho}')
+print(f'O homem mais jovem é {maisJovem}')
