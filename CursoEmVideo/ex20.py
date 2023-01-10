@@ -1,7 +1,12 @@
-sexo = str(input('Digite "M" para Masculino e "F" para Feminino: ')).strip().upper()
-while sexo not in 'M F':
-    print('-' * 40)
-    print('Valor Inválido. Tente novamente.')
-    print('-' * 40)
-    sexo = str(input('Digite "M" para Masculino e "F" para Feminino: ')).strip().upper()
-print(f'Muito bem.\nSexo: {sexo}')
+n = 1
+totPar = totImpar = 0
+while n != 0:
+    n = int(input('Digite um número ou 0 para sair do programa: '))
+    if n % 2 == 0:
+        totPar += 1
+    else:
+        totImpar += 1
+    if n == 0:
+        totPar -= 1
+print(f'Total de Pares: {totPar}')
+print(f'Total de Ímpares: {totImpar}')
