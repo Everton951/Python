@@ -31,4 +31,7 @@ while True:
             print('Você PERDEU!')            
             break
 print('=-' * 30)
-print('GAME OVER! você venceu {cont} vezes.')
+if cont == 1:
+    print(f'GAME OVER! você venceu {cont} vez.')
+else:
+    print(f'GAME OVER! você venceu {cont} vezes.')
