@@ -1,0 +1,1 @@
+#jogo de par ou impar - perguntar se quer par ou impar - contar quantas vezes você venceu - so parar quando você perder o jogo
