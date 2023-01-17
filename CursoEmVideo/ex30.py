@@ -5,5 +5,6 @@ n = int(input('Quantos termos você quer mostrar? '))
 t1 = 0
 t2 = 1
 print('~' * 30)
-print(f'{t1} -> {t2}')
+print(f'{t1} -> {t2} ', end='')
 t3 = t1 + t2
+print(' -> ',t3)
