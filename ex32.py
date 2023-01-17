@@ -13,8 +13,6 @@ while True:
     while escolha not in 'S N':
         print('Valor Inválido. Tente novamente.')
         escolha = str(input('Quer continuar ? [S/N]: ')).strip().upper()[0]
-    if escolha == 'N':
-        break
     if sexo == 'M':
         totHom += 1
     else:
@@ -23,6 +21,8 @@ while True:
         MulherMaior += 1
     if sexo == 'M' and idade >= 18:
         HomemMaior += 1
+    if escolha == 'N':
+        break
 s = MulherMaior + HomemMaior
 print(f'Tem {totHom} homem(ns) e {totMul} mulher(es).')
 print(f'Tem {MulherMaior} mulher(es) maior de idade e {HomemMaior} homens maiores de idade, totalizando {s} pessoa(s) maiores de idade.')
