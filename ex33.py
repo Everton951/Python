@@ -8,4 +8,6 @@ while escolha != 'N':
     while escolha not in 'S N':
         print('Valor Inválido. Tente novamente.')
         escolha = str(input('Quer continuar ? [S/N]: ')).strip().upper()[0]
-    
+    if preco >= 1000:
+        Maiosde1000 += 1
+print(f'Tem {Maiosde1000} produto(s) acima de 1000 reais.')
