@@ -1,5 +1,5 @@
 # caixa eletrônico - perguntar quanto quer sacar (inteiro) - o programa informa quantas cédulas de cada valor serão entregues - R$ 50 - 20 - 10 e 1
-n = int(input('Quanto você quer sacar: '))
+valor = int(input('Quanto você quer sacar: '))
 total = valor
 ced = 50
 totCed = 0
