@@ -13,10 +13,12 @@ while escolha != 'N':
         Maiosde1000 += 1
     if cont == 1:
         ProdutoBarato = preco
-        cont += 1
+    else:
         if preco < ProdutoBarato:
             ProdutoBarato = preco
-    print(f'Produto mais barato: {ProdutoBarato :.2f}')
+            
+    cont += 1
+    print(f'O produto mais barato é o {produto} e custa {ProdutoBarato :.2f}')
 if Maiosde1000 >= 1:        
     print(f'Tem {Maiosde1000} produto(s) acima de 1000 reais.')
 else:
