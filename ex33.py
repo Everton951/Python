@@ -19,6 +19,7 @@ while escolha != 'N':
             ProdutoBarato = preco
             nome = produto
     cont += 1
+print('-' * 30)
 if Maiosde1000 >= 1:        
     print(f'Tem {Maiosde1000} produto(s) acima de 1000 reais.')
 else:
