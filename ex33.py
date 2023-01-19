@@ -1,5 +1,5 @@
 # ler o nome do produto e seu preço - perguntar se quer continuar ou não - total da compra - quantos curstam mais de 1000 - nome do produto mais barato
-escolha = ''
+escolha = nome = ''
 total = Maiosde1000 = ProdutoBarato = 0
 cont = 1
 while escolha != 'N':
@@ -13,13 +13,14 @@ while escolha != 'N':
         Maiosde1000 += 1
     if cont == 1:
         ProdutoBarato = preco
+        nome = produto
     else:
         if preco < ProdutoBarato:
             ProdutoBarato = preco
-            
+            nome = produto
     cont += 1
-    print(f'O produto mais barato é o {produto} e custa {ProdutoBarato :.2f}')
 if Maiosde1000 >= 1:        
     print(f'Tem {Maiosde1000} produto(s) acima de 1000 reais.')
 else:
     print(f'Não há nenhum produto acima de 1000 reais.')
+print(f'O produto mais barato é o {nome.capitalize()} e custa {ProdutoBarato :.2f}')
