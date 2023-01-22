@@ -3,3 +3,5 @@ times = ['Flamengo', 'Palmeiras', 'Internacional', 'Fluminense', 'Corinthians', 
 print('-=' * 30)
 print(f'Lista de times: {times}')
 print('-=' * 30)
+print(f'Os 5 primeiros colocados: {times[:5]}')
+print('-=' * 30)
