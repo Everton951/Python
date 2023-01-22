@@ -1,12 +1,2 @@
-cont = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte']
-while True:
-    while True:
-        n = int(input('Digite um número entre 0 e 20: '))
-        if n <= 20 and n >= 0:
-            break
-        print(f'Tente novamente. ', end='')
-    print(f'Você digitou o número {cont[n]}')
-    escolha = str(input('Você quer continuar ? [S/N]: ')).strip().upper()[0]
-    if escolha == 'N':
-        break
-print('Programa Finalizado!')
+# CRIE UMA TUPLA COM OS TIMES DO BRASILEIRÃO - OS 5 PRIMEIROS - OS ÚLTIMOS 4 COLOCADOS - TIMES EM ORDEM ALFABÉTICA - EM QUE POSIÇÃO ESTÁ O TIME DO CUIABÁ
+times = ['Flamengo', 'Palmeiras', 'Internacional', 'Fluminense', 'COrinthians', 'Athletico-PR', 'Atlético-MG', 'Fortaleza', 'São Paulo', 'América-MG', 'Botafogo', 'Santos', 'Goiás', 'Bragantino', 'Coritiba', 'Cuiabá', 'Ceará', 'Atlético-GO', 'Avaí', 'Juventude']
