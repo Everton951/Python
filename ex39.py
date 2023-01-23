@@ -2,6 +2,5 @@
 n = [int(input('Digite um número: ')), int(input('Digite outro número: ')),
     int(input('Digite mais um número: ')),
     int(input('Digite o último número: '))]
-for c in n:    
-    print(f'{c}', end=' ')
-print('')
+print(f'Você digitou os valores: {n}')
+print(f'O valor 9 apareceu {n.count(9)} vezes.')
