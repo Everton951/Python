@@ -1,1 +1,2 @@
 # LISTA DE PREÇOS COM TUPLAS
+print()
