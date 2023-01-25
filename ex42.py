@@ -4,6 +4,4 @@ n.pop[3] #ELIMINAR O NÚMERO 3
 n.pop() #ELIMINA O ÚLTIMO VALOR DA LISTA
 n.remove(3) #ELIMINAR O NÚMERO 3
 n[3] = 10
-for c in n:
-    print(c, end='  ')
-print()
+valores = list(range(0, 11)) # CRIA UMA LISTA COM OS VALORES DE 0 ATÉ 10
