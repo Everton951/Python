@@ -11,5 +11,12 @@ for c in range(0, 5):
             menor = n[c]
 print('-=' * 30)
 print(f'Maior valor {maior} nas posições ', end=' ')
-
+for pos, valor in enumerate(n):
+    if valor == maior:
+        print(f'{pos}... ', end=' ')
+print()
 print(f'Menor valor {menor} nas posições ', end=' ')
+for pos, valor in enumerate(n):
+    if valor == menor:
+        print(f'{pos}... ', end=' ')
+print()
