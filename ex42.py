@@ -10,12 +10,17 @@ valores = list(range(0, 11)) # CRIA UMA LISTA COM OS VALORES DE 0 ATÉ 10
 for c in n:
     print(c, end='  ')
 print()'''
-
+'''
 valores = []
 valores.append(5)
 valores.append(4)
 valores.append(7)
+'''
 
+valores = []
+for cont in range(0, 5):
+    valores.append(int(input('Digite um valor: ')))
+    
 for pos, c in enumerate(valores):
     print(f'Na posição {pos + 1} encontrei o valor {c}')
 print('FIM!')
