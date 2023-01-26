@@ -9,6 +9,5 @@ for pos, c in enumerate(n):
         maior = c
     if c < menor:
         menor = c
-print('-=' * 15)
 print(f'Maior valor: {maior}')
 print(f'Menor valor: {menor}')
