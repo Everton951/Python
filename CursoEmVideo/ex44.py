@@ -5,3 +5,7 @@ for c in range(0, 5):
         lista.append(n)
     elif n > lista[-1]:
         lista.append(n)
+    else:
+        pos = 0
+        while pos < len(lista):
+            
