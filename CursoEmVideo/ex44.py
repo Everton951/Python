@@ -8,4 +8,9 @@ for c in range(0, 5):
     else:
         pos = 0
         while pos < len(lista):
-            
+            if n <= lista[pos]:
+                lista.insert(pos, n)
+                break
+            pos += 1
+print('-=' * 30)
+print(f'Os valores digitados em ordem: {lista}')
