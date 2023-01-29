@@ -7,7 +7,7 @@ while True:
 print('-=' * 30)
 print(f'Voc� digitou {len(valores)} elementos.')
 valores.sort(reverse=True)
-print(f'Os valores em ordem decrescentes s�o {valores}')
+print(f'Os valores em ordem decrescentes são {valores}')
 if 5 in valores:
     print('O 5 faz parte da lista.')
 else:
