@@ -5,7 +5,7 @@ while True:
     if resp in 'N':
         break
 print('-=' * 30)
-print(f'Voc� digitou {len(valores)} elementos.')
+print(f'Você digitou {len(valores)} elementos.')
 valores.sort(reverse=True)
 print(f'Os valores em ordem decrescentes são {valores}')
 if 5 in valores:
